@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+		<title>Vanilla SASS Starter</title>
+	</head>
+	<body>
+		<div class="bg-light">
+			<div
+				class="container bg-white shadow-dark"
+				id="top"
+				class="page"
+				role="document"
+			>
+				<main role="main">
+					<section id="text">
+						<header>
+							<h1 class="h1">Test Page</h1>
+							<p class="p">
+								This page displays common HTML elements with a theme's base
+								styles to make up a quick style guide.
+							</p>
+						</header>
+
+						<article id="text__headings">
+							<header>
+								<h3 class="h3">Typography</h3>
+							</header>
+							<div>
+								<h1 class="h1">Heading 1</h1>
+								<h2 class="h2">Heading 2</h2>
+								<h3 class="h3">Heading 3</h3>
+								<h4 class="h4">Heading 4</h4>
+								<h5 class="h5">Heading 5</h5>
+								<h6 class="h6">Heading 6</h6>
+							</div>
+						</article>
+						<article id="text__paragraphs">
+							<header><h3 class="h3">Paragraphs</h3></header>
+							<div>
+								<p class="p">
+									A paragraph (from the Greek paragraphos, 'to write beside' or
+									'written beside') is a self-contained unit of a discourse in
+									writing dealing with a particular point or idea. A paragraph
+									consists of one or more sentences. Though not required by the
+									syntax of any language, paragraphs are usually an expected
+									part of formal writing, used to organize longer prose.
+								</p>
+								<div>
+									<small class="text-small"
+										>This is some small Lorem ipsum dolor sit amet consectetur
+										adipisicing elit. Voluptatibus, recusandae.</small
+									>
+								</div>
+								<div>
+									<small class="text-x-small"
+										>This is some very small Lorem ipsum dolor sit amet
+										consectetur adipisicing elit. Voluptatibus,
+										recusandae.</small
+									>
+								</div>
+							</div>
+						</article>
+					</section>
+					<section id="embedded">
+						<header><h1 class="h1">Embedded content</h1></header>
+						<article id="embedded__images">
+							<header><h2 class="h2">Images</h2></header>
+							<div>
+								<h3>No <code>&lt;figure&gt;</code> element</h3>
+								<p>
+									<img src="//placebear.com/480/480" alt="Image alt text" />
+								</p>
+								<h3>
+									Wrapped in a <code>&lt;figure&gt;</code> element, no
+									<code>&lt;figcaption&gt;</code>
+								</h3>
+								<figure>
+									<img src="//placebear.com/420/420" alt="Image alt text" />
+								</figure>
+								<h3>
+									Wrapped in a <code>&lt;figure&gt;</code> element, with a
+									<code>&lt;figcaption&gt;</code>
+								</h3>
+								<figure>
+									<img src="//placebear.com/420/420" alt="Image alt text" />
+									<figcaption>Here is a caption for this image.</figcaption>
+								</figure>
+							</div>
+						</article>
+					</section>
+					<section id="forms">
+						<header><h1 class="h1">Form elements</h1></header>
+						<form>
+							<fieldset id="forms__input">
+								<legend class="h3">Input fields</legend>
+								<p>
+									<label for="input__text">Text Input</label>
+									<input
+										id="input__text"
+										type="text"
+										placeholder="Text Input"
+									/>
+								</p>
+								<p>
+									<label for="input__password">Password</label>
+									<input
+										id="input__password"
+										type="password"
+										placeholder="Type your Password"
+									/>
+								</p>
+								<p>
+									<label for="input__webaddress">Web Address</label>
+									<input
+										id="input__webaddress"
+										type="url"
+										placeholder="http://yoursite.com"
+									/>
+								</p>
+								<p>
+									<label for="input__emailaddress">Email Address</label>
+									<input
+										id="input__emailaddress"
+										type="email"
+										placeholder="name@email.com"
+									/>
+								</p>
+								<p>
+									<label for="input__phone">Phone Number</label>
+									<input
+										id="input__phone"
+										type="tel"
+										placeholder="(999) 999-9999"
+									/>
+								</p>
+								<p>
+									<label for="input__search">Search</label>
+									<input
+										id="input__search"
+										type="search"
+										placeholder="Enter Search Term"
+									/>
+								</p>
+								<p>
+									<label for="input__text2">Number Input</label>
+									<input
+										id="input__text2"
+										type="number"
+										placeholder="Enter a Number"
+									/>
+								</p>
+								<p>
+									<label for="input__text3" class="error">Error</label>
+									<input
+										id="input__text3"
+										class="is-error"
+										type="text"
+										placeholder="Text Input"
+									/>
+								</p>
+								<p>
+									<label for="input__text4" class="valid">Valid</label>
+									<input
+										id="input__text4"
+										class="is-valid"
+										type="text"
+										placeholder="Text Input"
+									/>
+								</p>
+							</fieldset>
+
+							<fieldset id="forms__select">
+								<legend>Select menus</legend>
+								<p>
+									<label for="select">Select</label>
+									<select id="select">
+										<optgroup label="Option Group">
+											<option>Option One</option>
+											<option>Option Two</option>
+											<option>Option Three</option>
+										</optgroup>
+									</select>
+								</p>
+							</fieldset>
+
+							<fieldset id="forms__checkbox">
+								<legend>Checkboxes</legend>
+								<ul class="list list--bare">
+									<li>
+										<label for="checkbox1"
+											><input
+												id="checkbox1"
+												name="checkbox"
+												type="checkbox"
+												checked="checked"
+											/>
+											Choice A</label
+										>
+									</li>
+									<li>
+										<label for="checkbox2"
+											><input id="checkbox2" name="checkbox" type="checkbox" />
+											Choice B</label
+										>
+									</li>
+									<li>
+										<label for="checkbox3"
+											><input id="checkbox3" name="checkbox" type="checkbox" />
+											Choice C</label
+										>
+									</li>
+								</ul>
+							</fieldset>
+
+							<fieldset id="forms__radio">
+								<legend>Radio buttons</legend>
+								<ul class="list list--bare">
+									<li>
+										<label for="radio1"
+											><input
+												id="radio1"
+												name="radio"
+												type="radio"
+												class="radio"
+												checked="checked"
+											/>
+											Option 1</label
+										>
+									</li>
+									<li>
+										<label for="radio2"
+											><input
+												id="radio2"
+												name="radio"
+												type="radio"
+												class="radio"
+											/>
+											Option 2</label
+										>
+									</li>
+									<li>
+										<label for="radio3"
+											><input
+												id="radio3"
+												name="radio"
+												type="radio"
+												class="radio"
+											/>
+											Option 3</label
+										>
+									</li>
+								</ul>
+							</fieldset>
+
+							<fieldset id="forms__textareas">
+								<legend>Textareas</legend>
+								<p>
+									<label for="textarea">Textarea</label>
+									<textarea
+										id="textarea"
+										rows="8"
+										cols="48"
+										placeholder="Enter your message here"
+									></textarea>
+								</p>
+							</fieldset>
+
+							<fieldset id="forms__html5">
+								<legend>HTML5 inputs</legend>
+								<p>
+									<label for="ic">Color input</label>
+									<input type="color" id="ic" value="#000000" />
+								</p>
+								<p>
+									<label for="in">Number input</label>
+									<input type="number" id="in" min="0" max="10" value="5" />
+								</p>
+								<p>
+									<label for="ir">Range input</label>
+									<input type="range" id="ir" value="10" />
+								</p>
+								<p>
+									<label for="idd">Date input</label>
+									<input type="date" id="idd" value="1970-01-01" />
+								</p>
+								<p>
+									<label for="idm">Month input</label>
+									<input type="month" id="idm" value="1970-01" />
+								</p>
+								<p>
+									<label for="idw">Week input</label>
+									<input type="week" id="idw" value="1970-W01" />
+								</p>
+								<p>
+									<label for="idt">Datetime input</label>
+									<input
+										type="datetime"
+										id="idt"
+										value="1970-01-01T00:00:00Z"
+									/>
+								</p>
+								<p>
+									<label for="idtl">Datetime-local input</label>
+									<input
+										type="datetime-local"
+										id="idtl"
+										value="1970-01-01T00:00"
+									/>
+								</p>
+							</fieldset>
+
+							<fieldset id="forms__action">
+								<legend>Action buttons</legend>
+								<p>
+									<input type="submit" value="<input type=submit>" />
+									<input type="button" value="<input type=button>" />
+									<input type="reset" value="<input type=reset>" />
+									<input type="submit" value="<input disabled>" disabled />
+								</p>
+								<p>
+									<button type="submit">&lt;button type=submit&gt;</button>
+									<button type="button">&lt;button type=button&gt;</button>
+									<button type="reset">&lt;button type=reset&gt;</button>
+									<button type="button" disabled>
+										&lt;button disabled&gt;
+									</button>
+								</p>
+							</fieldset>
+						</form>
+					</section>
+				</main>
+			</div>
+		</div>
+
+		<script src="./js/index.js"></script>
+	</body>
+</html>

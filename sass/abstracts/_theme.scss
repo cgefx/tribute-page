@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+
+//FONTS
+$font-family-body: 'Libre Franklin', sans-serif;
+$font-size-default: 1.6rem;
+
+// PRIMARY COLORS
+$color-primary: hsl(223, 87%, 63%);
+$color-primary-50: hsla(223, 87%, 63%, 0.5);
+$color-secondary: hsl(223, 100%, 88%);
+
+// NEUTRAL COLORS
+$color-white: #fff;
+$color-black: #000;
+$color-neutral-gray: hsl(0, 0%, 59%);
+$color-neutral-dark: hsl(209, 33%, 12%);
+$color-neutral-dark-50: hsla(209, 33%, 12%, 0.5);
+$color-neutral-light: hsl(204, 43%, 93%);
+
+// FEEDBACK COLORS
+$color-alert: hsl(354, 100%, 66%);
+
+// SHADOWS
+$box-shadow-dark: 0px 10px 25px $color-neutral-dark-50;
+$box-shadow-primary: 0px 10px 25px 1px $color-primary-50;
+
+// BORDER RADIUS
+$border-radius-24: 24px;
+$border-radius-sm: 4px;
+
+// TYPOGRAPHY
+body {
+	font-size: $font-size-default;
+	font-family: $font-family-body;
+	line-height: 1.65;
+}
+
+.p {
+	font-size: $font-size-default;
+}
+
+.h1 {
+	font-size: 6.4rem;
+	line-height: 1.15;
+}
+
+.h2 {
+	font-size: 4.8rem;
+}
+
+.h3 {
+	font-size: 2.4rem;
+}
+
+.h4 {
+	font-size: 3.2rem;
+}
+
+.h5 {
+	font-size: 2.4rem;
+}
+
+.h6 {
+	font-size: 2rem;
+}
+
+.text-small {
+	font-size: 0.8rem;
+}
+
+.text-x-small {
+	font-size: 1rem;
+}
+
+// TYPOGRAPHY - Text styles
+.text-300 {
+	font-weight: 300;
+}
+.text-600 {
+	font-weight: 600;
+}
+.text-700 {
+	font-weight: 700;
+}
+
+.text-italic {
+	font-style: italic;
+}
+
+// TYPOGRAPHY - Text Colors
+.color-dark {
+	color: $color-neutral-dark;
+}
+
+.color-white {
+	color: $color-white;
+}
+
+.color-gray {
+	color: $color-neutral-gray;
+}
+
+.color-light {
+	color: $color-neutral-light;
+}
+
+.color-primary {
+	color: $color-primary;
+}
+
+.color-secondary {
+	color: $color-secondary;
+}
+
+.color-alert {
+	color: $color-alert;
+}
+
+// FILL COLORS
+.bg-dark {
+	background-color: $color-neutral-dark;
+}
+
+.bg-white {
+	background-color: $color-white;
+}
+
+.bg-light {
+	background-color: $color-neutral-light;
+}
+
+.bg-primary {
+	background-color: $color-primary;
+}
+
+.bg-primary-50 {
+	background-color: $color-primary-50;
+}
+
+.bg-secondary {
+	background-color: $color-secondary;
+}
+
+// BOX SHADOWS
+.shadow-dark {
+	box-shadow: $box-shadow-dark;
+}
+
+.shadow-primary {
+	box-shadow: $box-shadow-primary;
+}
+
+// BORDER STYLES
+
+.border-secondary {
+	border: 1px solid $color-secondary;
+}
+
+.border-radius-sm {
+	border-radius: $border-radius-sm;
+}
+
+.border-radius-24 {
+	border-radius: $border-radius-24;
+}
